@@ -30,7 +30,7 @@ function App() {
                     p1="MongoDB Database"
                     p2="A Chat Webapp that authorizes users and allows them to message anonymously."
                     p3="Libraries used: Mongoose, Express, Passport"
-                    btn="https://ptg-forum.herokuapp.com/"
+                    btn="https://github.com/aditi567/ptg-forum"
                 />
             </div>
            
