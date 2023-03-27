@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ff881a078f.js" crossorigin="anonymous"></script>
+
+    <!-- github stylesheet -->
+     <link crossorigin="anonymous" media="all" integrity="sha512-dkuYFW+ra8yYSt342e5pJEeslPSjMcrMvNxlYZMyM/X+/WJHDPvoCuGq3LFojI7B0dQWwZNRiPMnbi9IfUgTaA==" rel="stylesheet" href="https://github.githubassets.com/assets/light-764b98156fab6bcc984addf8d9ee6924.css" /><link crossorigin="anonymous" media="all" integrity="sha512-UrAu23+eyncWvaQFwsLbgSKtmLb2aH1bcT4hJnnRdkaPuY1eu9bumt33FyHHFDX8hskTUNWNkIsMCz7FWQQHwA==" rel="stylesheet" href="https://github.githubassets.com/assets/dark-52b02edb7f9eca7716bda405c2c2db81.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" integrity="sha512-kyu73YWtU8Fu2e7p+Hv094CRhaTvr8yy95vc1SQ2+MeWVWakGeIh/lv9yIFaYAb8J3oM6uBLGcn1kS6M1GxBCQ==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-932bbbdd85ad53c16ed9eee9f87bf4f7.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-jZSKF7Gx8T/AFthO0CUkWWpG5EBlIZb+tIYu8KgP/kizn7fpXEiXJcB73GTZ69wSVVSZ6Y1Cw286qP7pVZr0gg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-8d948a17b1b1f13fc016d84ed0252459.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" integrity="sha512-E02WD8opZPpYu6LM9dlUSIHQgXtLmzi1KxMnaN/SA7k6ILsvpNJjpkBPU1sC98MitAOkCNIe6ozqY8+pHnrHZg==" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-134d960fca2964fa58bba2ccf5d95448.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" integrity="sha512-VWdBPHZj3WCDwaO0N2W8yvDZt7TNZohRIYK4sjjSU56485rCWazxnLr4p3DU8eqn2+eSj3CYYpw4+DzmwHOwew==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-5567413c7663dd6083c1a3b43765bcca.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" integrity="sha512-dw8LrBQMvo9HDd5lo2UEp/tvMVR6zJjrQkQTBVrhyaHDlL1p7UiQ9/xpqYxOz9s7s1Qh5Bjokuzu7NX0U5BeYA==" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-770f0bac140cbe8f470dde65a36504a7.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-qnQ/F8LLYoQMGThUwEBSlMxiYHch+S/b9RRB7xQLd2KV0SYwDTKOddCpUyASbG3S9MM13xxngC/E5j0xOhwqSw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-aa743f17c2cb62840c193854c0405294.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-UClkQCXZUB72OhcRH/0tTtWJpsH0AtA2wYP5hy3F2QoFGJbTSRKa0tDGevxG9D1jfxsDCpvRoboRMbaloQCrDA==" rel="stylesheet" href="https://github.githubassets.com/assets/behaviors-5029644025d9501ef63a17111ffd2d4e.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-lI46H2564tEkXTyrrH+Hwlin/71MJJMEuhHUMWxvDjpn2UnzYo+PkR2vvPwgr3pEt6EhZI8pZhfatt9dY2ZZhQ==" rel="stylesheet" href="https://github.githubassets.com/assets/tab-size-fix-948e3a1f6e7ae2d1245d3cabac7f87c2.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-07rWJT9Gb4tcA3jRuHHq6UwpZZTB7DA5UgX2DWlyS46uz8BYxU0YjPTSy3oWCkeFuJih/9r/ohvo8a9akqngpw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-d3bad6253f466f8b5c0378d1b871eae9.css" />
+
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+    <!-- animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- our stylesheet -->
+ <link rel="stylesheet" href="/src/index.css" />
+
+
+    <title>Aditi's Resume</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar navigation-bar navbar-light  fixed-top">
+        <div class="container-fluid">
+          <span class="navbar-brand" href="#"> <h2 class="text">Resume</h2></span>
+          <button class="effect navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text nav-body">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="effect btn-close btn-light bg-light text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body nav-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#profile"><h2 class="nav-text">Profile</h2></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience"><h2 class="nav-text">Experience</h2></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects"><h2 class="nav-text">Projects</h2></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#marksheets"><h2 class="nav-text">Marksheets</h2></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#knowledge"><h2 class="nav-text">Knowledge</h2></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"><h2 class="nav-text">Contact</h2></a>
+                </li>
+                <li>
+                  <button class="btn btn-lg btn-outline-light" onclick="prompt('Press( Ctrl + C ), then Enter to copy to clipboard','https://aditi567.github.io/Resume/')">Copy website link</button>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+<div class="space"></div>
+
+<!-- profile section -->
+<section id="profile">
+    <div class="container prof-animi">
+      <div class="row">
+        
+        <div class="profile-col col-lg-6">
+        <img class="profile-img" src="Aditi.jpg" alt="my profile photo">
+        </div>
+        
+        <div class="profile-col col-lg-6">
+          <h1>Aditi Mukund Davange</h1>
+          <h2>Computer Engineer</h2>
+          </div> 
+         
+      </div>
+    </div>
+  </section>
+
+<!-- Experience section -->
+<section class="hidden" id="experience">
+</section>
+
+
+<!-- project section -->
+<section class="hidden" id="projects">
+  <div id="root"></div>
+</section>
+
+  <!-- marksheet section -->
+  <section id="marksheets">
+    <h2 class="section-heading">Marksheets</h2> 
+      <div class="container">
+        <div class="row">
+
+          <div class="card-col col-lg-3 col-md-6">
+            <div class="card-box">
+              <div class="card-box-front">
+                <img src="./CGPA.jpg">
+              </div>
+              <div class="card-box-back">
+                <h4>TE CGPA: 9.130</h4> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-lg-3 col-md-6">
+            <div class="card-box">
+              <div class="card-box-front">
+                <img src="./CET.jpeg">
+              </div>
+              <div class="card-box-back">
+                <h4>MHT-CET: 98.83</h4> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-lg-3 col-md-6">
+            <div class="card-box">
+              <div class="card-box-front">
+                <img src="./HSC.png">
+              </div>
+              <div class="card-box-back">
+                <h4>HSC Result: 90.46</h4> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-lg-3 col-md-6">
+            <div class="card-box">
+              <div class="card-box-front">
+                <img src="./SSC.png">
+              </div>
+              <div class="card-box-back">
+                <h4>SSC Result: 94.60</h4> 
+              </div>
+            </div>
+          </div>
+          
+        </div>               
+      </div>
+</section> 
+
+
+
+  <!-- knowledge section -->
+  <section class="hidden" id="knowledge">
+    <h2 class="section-heading">Knowledge</h2>
+    <div class="container">
+      <div class="row">
+        <div class="knowledge-col col-md-6 xyz-nested">
+          <h2><i class="fab fa-react"></i>  React-Redux</h2>
+          <h2><i class="fas fa-database"></i>  MongoDB</h2>
+          <h2><i class="fab fa-python"></i>  Django </h2>
+          <h2><i class="fab fa-node-js"></i>  Nodejs </h2>
+          <h2><i class="fab fa-java"></i>  Java</h2>
+          <h2><i class="fas fa-key"></i>  Authentication</h2> 
+        </div>
+        <div class="knowledge-col col-md-6 xyz-nested">
+          <h2><i class="fas fa-database"></i>  PostgreSQL </h2>
+          <h2><i class="fab fa-js"></i>  Express</h2>
+          <h2><i class="fab fa-css3-alt"></i>  CSS3</h2>
+          <h2><i class="fas fa-database"></i>  SQL</h2> 
+          <h2><i class="fab fa-python"></i>  Python</h2>
+          <h2><i class="fab fa-js-square"></i>  JavascriptES6</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+    <section class="hidden" id="contact">
+      <h2 class="section-heading">Click to contact</h2> 
+      <div class="container">
+        <div class="row contact-row">
+          <div class="contact-col col-lg-3 col-md-6 hidden">
+            <a href="tel:7517027885" class="social" rel="noopener noreferrer" target="_blank">
+              <i class="effect contact-img fas fa-mobile-alt fa-4x" style="color: wheat;"></i><br><h6 style="color:  #EAEAEA;">7517027885</h6></a>
+          </div>
+          <div class="contact-col col-lg-3 col-md-6 hidden">
+            <a href="mailto:davangeaditi@gmail.com" class="social" rel="noopener noreferrer" target="_blank">
+              <i class="effect contact-img fas fa-envelope fa-4x" style="color: rgb(112, 4, 4);"></i><br><h6 style="color:  #EAEAEA;">davangeaditi@gmail.com</h6></a>
+          </div>
+          <div class="contact-col col-lg-3 col-md-6 hidden">
+            <a href="https://www.linkedin.com/in/aditi-davange-646ab8209"class="social" rel="noopener noreferrer"
+            target="_blank"><i class="effect contact-img fab fa-linkedin fa-4x" style="color: rgb(35, 108, 192);"></i><br><h6 style="color:  #EAEAEA;">Aditi Davange</h6></a>
+          </div>
+          <div class="contact-col col-lg-3 col-md-6 hidden">
+            <a href="https://github.com/aditi567"class="social"rel="noopener noreferrer"
+            target="_blank"><i class="effect contact-img fab fa-github-square fa-4x" style="color: rgb(165, 168, 168);"></i><br><h6 style="color:  #EAEAEA;">Github</h6></a>
+          </div>
+        </div>               
+      </div>
+  </section>
+ <div id="foot"></div>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ 
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+
+    <!-- our JS -->
+    <script type="text/jsx" src="/src/index.js"></script>
+
+  </body>
+</html>
